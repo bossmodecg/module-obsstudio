@@ -1,0 +1,15 @@
+{
+  "name": "bossmodecg-module-obsstudio",
+  "version": "0.0.1",
+  "main": "dist",
+  "license": "MIT",
+  "dependencies": {
+    "bossmodecg": "file:///Users/ed/Development/reactcg/bossmodecg",
+    "eventemitter2": "^4.0.0",
+    "mixin": "^0.2.0",
+    "obs-websocket-js": "^0.3.3"
+  },
+  "scripts": {
+    "build": "./node_modules/babel-cli/bin/babel.js src -d dist"
+  }
+}
