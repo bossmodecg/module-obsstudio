@@ -826,6 +826,10 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
+crypto@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/crypto/-/crypto-0.0.3.tgz#470a81b86be4c5ee17acc8207a1f5315ae20dbb0"
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -1621,10 +1625,12 @@ object.omit@^2.0.0:
     for-own "^0.1.4"
     is-extendable "^0.1.1"
 
-obs-websocket-js@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/obs-websocket-js/-/obs-websocket-js-0.3.3.tgz#4451c34d779fc629d5886dffdb94752c1ff338da"
+obs-websocket-js@haganbmj/obs-websocket-js#dev:
+  version "0.0.0-0"
+  resolved "https://codeload.github.com/haganbmj/obs-websocket-js/tar.gz/883eca2ad0131eab4b6504e4dcf003bd04529c1d"
   dependencies:
+    crypto "0.0.3"
+    sha.js "^2.4.8"
     ws "^1.1.1"
 
 on-finished@~2.3.0:
@@ -1915,6 +1921,12 @@ set-immediate-shim@^1.0.1:
 setprototypeof@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.0.3.tgz#66567e37043eeb4f04d91bd658c0cbefb55b8e04"
+
+sha.js@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/sha.js/-/sha.js-2.4.8.tgz#37068c2c476b6baf402d14a49c67f597921f634f"
+  dependencies:
+    inherits "^2.0.1"
 
 signal-exit@^3.0.0:
   version "3.0.2"
