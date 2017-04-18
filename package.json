@@ -1,12 +1,15 @@
 {
   "name": "@bossmodecg/module-obsstudio",
-  "version": "0.0.20",
+  "version": "0.1.1",
   "description": "A BossmodeCG module for interfacing with OBS Studio.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bossmodecg/module-obsstudio/issues"
   },
   "repository": "github:bossmodecg/module-obsstudio",
+  "files": [
+    "dist"
+  ],
   "bossmodecg": {
     "modulePath": "dist/index"
   },
@@ -17,7 +20,7 @@
     "obs-websocket-js": "bossmodecg/obs-websocket-js#dev"
   },
   "peerDependencies": {
-    "@bossmodecg/core": "^0.0.20"
+    "@bossmodecg/core": "^0.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
