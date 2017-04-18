@@ -1,6 +1,6 @@
 {
   "name": "@bossmodecg/module-obsstudio",
-  "version": "0.0.10",
+  "version": "0.0.20",
   "description": "A BossmodeCG module for interfacing with OBS Studio.",
   "license": "MIT",
   "bugs": {
@@ -17,7 +17,7 @@
     "obs-websocket-js": "bossmodecg/obs-websocket-js#dev"
   },
   "peerDependencies": {
-    "@bossmodecg/core": "^0.0.10"
+    "@bossmodecg/core": "^0.0.20"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
@@ -37,7 +37,7 @@
   "scripts": {
     "test": "eslint src && jest --coverage",
     "build": "babel src -d dist",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && npm run test",
     "precommit": "npm run test",
     "prepush": "npm run test"
   }
