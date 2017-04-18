@@ -1,4 +1,4 @@
-import BossmodeCG from 'bossmodecg';
+import BossmodeCG from '@bossmodecg/core';
 
 import { OBSWebSocket } from 'obs-websocket-js';
 
@@ -23,12 +23,12 @@ export default class OBSStudioModule extends BossmodeCG.BModule {
     };
   }
 
-  async _doRegister(server) {
+  async _doRegister() {
     const config = this.config;
     const logger = this.logger;
 
     logger.info(`Connecting to ${config.url}${config.password ? ' with password.' : '.'}`);
-    const obs = this._obs = new OBSWebSocket(config.url, config.password);
+    this._obs = new OBSWebSocket(config.url, config.password);
 
     // hooking _emitEvent is kind of dangerous, but it's the best way we've got to
     // catch ALL events.
@@ -37,14 +37,13 @@ export default class OBSStudioModule extends BossmodeCG.BModule {
 
       this.emit(ChangeCase.camel(eventType), fixEventKeys(event));
 
-      this._obs.emit('obs:event:' + eventType, event);
+      this._obs.emit(`obs:event:${eventType}`, event);
       this._obs.emit(eventType, event);
     };
 
     this.on('streamStatus', (event) => {
       this.logger.debug("OBS sent stream status update.");
 
-      const oldStatus = this._state.streamStatus;
       this.setState({ streamStatus: event });
     });
   }
