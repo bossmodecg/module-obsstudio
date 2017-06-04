@@ -17,15 +17,15 @@
     "change-case": "^3.0.1",
     "eventemitter2": "^4.0.0",
     "mixin": "^0.2.0",
-    "obs-websocket-js": "bossmodecg/obs-websocket-js#dev"
+    "obs-websocket-js": "^0.6.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-plugin-transform-async-to-generator": "^6.22.0",
-    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.2.2",
-    "babel-preset-es2017": "^6.22.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2017": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
